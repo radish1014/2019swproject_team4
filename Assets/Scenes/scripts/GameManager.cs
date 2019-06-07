@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
 
         Debug.Log("x = " + x + ", y = " + y);
         Square[x, y] = Instantiate(Random.Range(0, 8) > 0 ? n[0] : n[1], new Vector3(1.79f * x - 5.122f, 1.79f * y - 2.816f, -1), Quaternion.identity);
-
+        //Square[x, y].GetComponent
     }
 
 
