@@ -23,39 +23,33 @@ public class GameManager : MonoBehaviour
     
     void Update()
     {
-        
-        
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow)== true){
+
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow) == true)
+        {
             Debug.Log("keydown- left");
-            for (y = 0; y <= 3; y++)for (x = 3; x >= 1; x--)for (i = 0; i <= x-1; i++) MoveorCombine(i + 1, y, i, y);
+            for (y = 0; y <= 3; y++) for (x = 3; x >= 1; x--) for (i = 0; i <= x - 1; i++) MoveorCombine(i + 1, y, i, y);
 
         }
 
-        if (Input.GetKeyDown(KeyCode.RightArrow) == true){
-            if (wait){
-                wait = false;
-                Debug.Log("keydown- right");
-            }
+        else if (Input.GetKeyDown(KeyCode.RightArrow) == true)
+        {
+            Debug.Log("keydown- right");
+            for (y = 0; y <= 3; y++) for (x = 0; x <= 2; x++) for (i = 3; i >= x + 1; i--) MoveorCombine(i - 1, y, i, y);
+        }
+        else if (Input.GetKeyDown(KeyCode.UpArrow) == true)
+        {
+            Debug.Log("keydown- up");
+            for (x = 0; x <= 3; x++) for (y = 0; y <= 2; y++) for (i = 3; i >= y + 1; i--) MoveorCombine(x, i - 1, x, i);
 
         }
-        if (Input.GetKeyDown(KeyCode.UpArrow) == true){
-            if (wait){
-                wait = false;
-                Debug.Log("keydown- up");
-
-            }
-
+        else if (Input.GetKeyDown(KeyCode.DownArrow) == true)
+        {
+            Debug.Log("keydown- down");
+            for (x = 0; x <= 3; x++) for (y = 3; y >= 1; y--) for (i = 0; i <= y - 1; i++) MoveorCombine(x, i + 1, x, i);
         }
-        if (Input.GetKeyDown(KeyCode.DownArrow) == true){
-            if (wait){
-                wait = false;
-                Debug.Log("keydown- down");
-
-            }
-
-        }
-
+        else return;
 
         if (move) {
             move = false;
@@ -71,7 +65,7 @@ public class GameManager : MonoBehaviour
         if (Square[x2, y2] == null && Square[x1, y1] != null) {
 
             move = true;
-            Square[x1, y1].GetComponent<Moving>().Move(x2,y2);
+            Square[x1, y1].GetComponent<Moving>().Move(x2,y2,false);
             Square[x2, y2] = Square[x1, y1];
             Square[x1, y1] = null;
         }
@@ -82,12 +76,14 @@ public class GameManager : MonoBehaviour
             for (j = 0; j <= 11; j++){
                 if (Square[x2, y2].name == n[j].name + "(Clone)") break;
             }
-            Square[x1, y1].GetComponent<Moving>().Move(x2, y2);
+            Square[x1, y1].GetComponent<Moving>().Move(x2, y2,true);
             Destroy(Square[x2, y2]);
             Square[x1, y1] = null;
             Square[x2, y2] = Instantiate(n[j + 1], new Vector3((1.79f * x2) - 5.122f, (1.79f * y2) - 2.816f, -1), Quaternion.identity);
+            Square[x2, y2].tag = "Combine";
+            Square[x2, y2].GetComponent<Animator>().SetTrigger("Combine");
 
-            
+
         }
 
     }
