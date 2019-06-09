@@ -12,8 +12,9 @@ public class GameManager : MonoBehaviour
     int x, y,i,j;
     GameObject[,] Square = new GameObject[4, 4];
     Vector3 keyPos;
+
     bool wait,move;
-    //
+    
     void Start()
     {
         Spawn();
@@ -54,6 +55,15 @@ public class GameManager : MonoBehaviour
         if (move) {
             move = false;
             Spawn();
+
+            for (x = 0; x <= 3; x++)
+            {
+                for (y = 0; y <=3; y++)
+                {
+                    if (Square[x, y] == null) continue;
+                    if (Square[x, y].tag == "Combine") Square[x, y].tag = "Untagged";
+                }
+            }
         }
 
 
