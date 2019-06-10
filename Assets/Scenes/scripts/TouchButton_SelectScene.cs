@@ -31,8 +31,8 @@ public class TouchButton_SelectScene : MonoBehaviour
     public void select_Stage2Button_ChangeScene()
     {
         Debug.Log("select_stage2button");
-       // SceneManager.LoadScene("ModeSelect_Scene");
-       //2스테이지로 이동
+        SceneManager.LoadScene("Chapter_2_Start");
+        //2스테이지로 이동
     }
     public void select_Stage3Button_ChangeScene()
     {
