@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 [System.Serializable]
 public class Dialogue
 {
@@ -17,25 +18,17 @@ public class Test : MonoBehaviour
     [SerializeField] private SpriteRenderer sprite_DialogueBox;
     [SerializeField] private Text txt_Dialogue;
 
-    private bool isDialogue = false;
-
     private int count = 0;
 
     [SerializeField] private Dialogue[] dialogue;
 
-    public void ShowDialogue()
-    {
-        OnOff(true);
-        count = 0;
-        NextDialogue();
-    }
+    
 
     private void OnOff(bool _flag)
     {
         sprite_DialogueBox.gameObject.SetActive(_flag);
         sprite_StandingCG.gameObject.SetActive(_flag);
         txt_Dialogue.gameObject.SetActive(_flag);
-        isDialogue = _flag;
     }
 
 
@@ -44,20 +37,28 @@ public class Test : MonoBehaviour
         txt_Dialogue.text = dialogue[count].dialogue;
         sprite_StandingCG.sprite = dialogue[count].cg;
         count++;
+        Debug.Log("count="+ count);
+
+    }
+
+    void Start() {
+
+        OnOff(true);
+        count = 0;
+        NextDialogue();
+        Debug.Log("돌아가는중");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isDialogue)
+        Debug.Log("count=" + count);
+        Debug.Log("dialogue.Length=" + dialogue.Length);
+        if (Input.GetKeyDown(KeyCode.Space)==true)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                if (count < dialogue.Length)
-                    NextDialogue();
-                else
-                    OnOff(false);
-            }
+            if (count < dialogue.Length) NextDialogue();
+            else OnOff(false);
         }
+        
     }
 }
