@@ -7,6 +7,7 @@ TagManager:
   - m_Start
   - m_setting
   - m_exit
+  - Combine
   layers:
   - Default
   - TransparentFX
