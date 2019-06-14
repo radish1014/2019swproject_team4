@@ -232,57 +232,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b40941f44f0092445a9f924f47ef93ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite_StandingCG: {fileID: 619271557}
-  sprite_DialogueBox: {fileID: 889441579}
-  txt_Dialogue: {fileID: 1850409595}
+  sprite_textBox: {fileID: 889441579}
+  sprite_standingCG: {fileID: 619271557}
+  txt_dialogue: {fileID: 1850409595}
   dialogue:
-  - dialogue: "\uB538\uB791-"
+  - log: "\uB538\uB791-"
     cg: {fileID: 0}
-  - dialogue: "\uC559\uC6A9\uD558\uC170\uC5EC! \uC800\uAE30.. \uD639\uC2DC \uC5EC\uAE30\uC5D0\uC11C\uB3C4
+  - log: "\uC559\uC6A9\uD558\uC170\uC5EC! \uC800\uAE30.. \uD639\uC2DC \uC5EC\uAE30\uC5D0\uC11C\uB3C4
       \uC870\uAC1C\uB97C \uD30C\uB098\uC694...?"
     cg: {fileID: 21300000, guid: 5c7f027706d06a245b4630c73e4a4e51, type: 3}
-  - dialogue: "\uC74C.. \uC544\uC27D\uAC8C\uB3C4 \uC774\uACF3\uC740 \uBE75\uC9D1\uC774\uB77C
+  - log: "\uC74C.. \uC544\uC27D\uAC8C\uB3C4 \uC774\uACF3\uC740 \uBE75\uC9D1\uC774\uB77C
       \uC870\uAC1C\uB294 \uCDE8\uAE09\uD558\uC9C0 \uC54A\uB294\uB2E4\uB124."
-    cg: {fileID: 21300000, guid: 0ce92fc5488b39b43901bc5c5db2bdb7, type: 3}
-  - dialogue: "\uC557..\uC544\uC557 \uD558\uC9C0\uB9CC \uBC8C\uC368 \uC774\uACF3\uC774
-      16\uBC88\uC9F8 \uBC29\uBB38\uD55C \uACF3\uC778\uAC78\uC694\u3160\u3160\u3160
-      \uC800\uB294 \uB2F9\uC7A5 \uC870\uAC1C\uB97C \uAD6C\uD558\uC9C0 \uBABB\uD558\uBA74
+    cg: {fileID: 21300000, guid: 105b71ffe0864554ea3347d4a3e10696, type: 3}
+  - log: "\uC557..\uC544\uC557 \uD558\uC9C0\uB9CC \uBC8C\uC368 \uC774\uACF3\uC774
+      16\uBC88\uC9F8 \uBC29\uBB38\uD55C \uACF3\uC778\uAC78\uC694\u3160\u3160\u3160"
+    cg: {fileID: 0}
+  - log: "\uC800\uB294 \uB2F9\uC7A5 \uC870\uAC1C\uB97C \uAD6C\uD558\uC9C0 \uBABB\uD558\uBA74
       \uB2E4\uB978 \uAC00\uAC8C\uB97C \uCC3E\uC544\uAC00\uB294 \uB3C4\uC911\uC5D0
       \uAD76\uC5B4 \uC8FD\uACE0 \uB9D0\uAC70\uC5D0\uC694\u3160\u3160\u3160"
-    cg: {fileID: 21300000, guid: 0fde96f39346463438b358d4f4925d64, type: 3}
-  - dialogue: "\uADF8\uB807\uAC8C \uB9D0\uD574\uB3C4 \uB4E4\uC5B4\uC904 \uC218 \uC5C6\uB294
-      \uBD80\uD0C1\uB3C4 \uC788\uB294 \uBC95\uC774\uC57C. \uC544\uC27D\uC9C0\uB9CC
-      \uC5EC\uAE30\uBCF4\uB2E8 \uC2DC\uC7A5\uC73C\uB85C \uAC00\uBA74 \uD574\uC0B0\uBB3C\uC9D1\uC774
-      \uC788\uC744..."
+    cg: {fileID: 0}
+  - log: "\uADF8\uB807\uAC8C \uB9D0\uD574\uB3C4 \uB4E4\uC5B4\uC904 \uC218 \uC5C6\uB294
+      \uBD80\uD0C1\uB3C4 \uC788\uB294 \uBC95\uC774\uC57C."
     cg: {fileID: 21300000, guid: b0065d6c76714694cb9a705ce5448b7f, type: 3}
-  - dialogue: "\uC548\uB3FC\uC694! \uC800\uB294 \uC774 \uC9D1\uC5D0\uC11C \uC870\uAC1C\uB97C
+  - log: "\uC544\uC27D\uC9C0\uB9CC \uC5EC\uAE30\uBCF4\uB2E8 \uC2DC\uC7A5\uC73C\uB85C
+      \uAC00\uBA74 \uD574\uC0B0\uBB3C\uC9D1\uC774 \uC788\uC744..."
+    cg: {fileID: 21300000, guid: 105b71ffe0864554ea3347d4a3e10696, type: 3}
+  - log: "\uC548\uB3FC\uC694! \uC800\uB294 \uC774 \uC9D1\uC5D0\uC11C \uC870\uAC1C\uB97C
       \uAD6C\uD558\uC9C0 \uBABB\uD558\uBA74 \uB2E4\uC2DC\uB294 \uBC14\uB2E4\uB85C
-      \uB3CC\uC544\uAC00\uC9C0 \uBABB\uD560\uAC70\uB77C\uAD6C\uC694! \uC9C4\uC9DC
-      \uC870\uAC1C\uB97C \uC5BB\uC744 \uC218 \uC5C6\uB2E4\uBA74 \uC870\uAC1C\uB791
+      \uB3CC\uC544\uAC00\uC9C0 \uBABB\uD560\uAC70\uB77C\uAD6C\uC694!"
+    cg: {fileID: 21300000, guid: c9ac45644d2cd824888854d4774008d0, type: 3}
+  - log: "\uC9C4\uC9DC \uC870\uAC1C\uB97C \uC5BB\uC744 \uC218 \uC5C6\uB2E4\uBA74 \uC870\uAC1C\uB791
       \uBE44\uC2B7\uD55C \uB2E4\uB978\uAC70\uB77C\uB3C4 \uC900\uBE44\uD574\uC8FC\uC138\uC694!"
     cg: {fileID: 21300000, guid: c9ac45644d2cd824888854d4774008d0, type: 3}
-  - dialogue: "\uB0B4\uC77C \uB2E4\uC2DC \uCC3E\uC544\uC62C\uD14C\uB2C8 \uC81C\uB300\uB85C
-      \uB41C\uAC78 \uAF2D \uC900\uBE44\uD574 \uB193\uB3C4\uB85D \uD558\uC138\uC694.
-      \uADF8\uB807\uC9C0 \uC54A\uC73C\uBA74 \uC800\uC758 \uC774 \uADC0\uC5EC\uC6C0\uC73C\uB85C
+  - log: "\uB0B4\uC77C \uB2E4\uC2DC \uCC3E\uC544\uC62C\uD14C\uB2C8 \uC81C\uB300\uB85C
+      \uB41C\uAC78 \uAF2D \uC900\uBE44\uD574 \uB193\uB3C4\uB85D \uD558\uC138\uC694."
+    cg: {fileID: 21300000, guid: 5c7f027706d06a245b4630c73e4a4e51, type: 3}
+  - log: "\uADF8\uB807\uC9C0 \uC54A\uC73C\uBA74 \uC800\uC758 \uC774 \uADC0\uC5EC\uC6C0\uC73C\uB85C
       \uC0AC\uB78C\uB4E4\uC744 \uC120\uB3D9\uD574\uC11C \uB2E4\uC2DC\uB294 \uC774
-      \uBE75\uC9D1 \uC720\uB9AC\uCC3D\uC5D0\uB294 \uC190\uB2D8\uC774 \uBE44\uCE58\uB294
-      \uB0A0\uC774 \uC5C6\uB3C4\uB85D \uB9CC\uB4E4\uAC70\uC5D0\uC694!"
+      \uBE75\uC9D1 \uC720\uB9AC\uCC3D\uC5D0 \uC190\uB2D8 \uC5BC\uAD74\uC774 \uBE44\uCE58\uB294
+      \uB0A0\uC740 \uC5C6\uAC8C \uB9CC\uB4E4\uAC70\uC5D0\uC694!"
     cg: {fileID: 21300000, guid: c9ac45644d2cd824888854d4774008d0, type: 3}
-  - dialogue: "\uD5C8\uC5B5, \uC6B0\uB9AC\uBE75\uC9D1\uC740 \uC774\uC81C\uC57C \uC774\uB984\uC744
-      \uC54C\uB9AC\uAE30 \uC2DC\uC791\uD588\uC5B4 \uADF8\uAC83\uB9CC\uC740 \uBD10\uC8FC\uAC8C\uB098\u3160\u3160.
-      \uB300\uC2E0 \uC870\uAC1C\uB791 \uBE44\uC2B7\uD55C\uAC78 \uCC3E\uC544\uC11C
-      \uAF2D \uB9CC\uB4E4\uC5B4 \uB193\uACA0\uB124!"
+  - log: "\uD5C8\uC5B5, \uC6B0\uB9AC\uBE75\uC9D1\uC740 \uC774\uC81C\uC57C \uC774\uB984\uC744
+      \uC54C\uB9AC\uAE30 \uC2DC\uC791\uD588\uC5B4 \uADF8\uAC83\uB9CC\uC740 \uBD10\uC8FC\uAC8C\uB098\u3160\u3160"
     cg: {fileID: 21300000, guid: 97bd8e17bc13565468b5fe84bdff482c, type: 3}
-  - dialogue: "\uC640\uC544~ \uC88B\uC544! \uADF8\uB7FC \uB0B4\uC77C \uB2E4\uC2DC
-      \uC62C\uD14C\uB2C8 \uAF2D \uB9CC\uB4E4\uC5B4 \uB193\uC73C\uC154\uC57C \uD574\uC694~~~!
-      \uC800\uC758 \uC774 \uADC0\uC5EC\uC6B4 \uC5BC\uAD74\uC744 \uBD10\uC11C\uB77C\uB3C4!
-      \uADF8\uB7FC \uC548\uB155 !"
+  - log: "\uB300\uC2E0 \uC870\uAC1C\uB791 \uBE44\uC2B7\uD55C\uAC78 \uCC3E\uC544\uC11C
+      \uAF2D \uB9CC\uB4E4\uC5B4 \uB193\uACA0\uB124!"
+    cg: {fileID: 21300000, guid: 0ce92fc5488b39b43901bc5c5db2bdb7, type: 3}
+  - log: "\uC640\uC544~ \uAC10\uC0AC\uD569\uB2C8\uB2E4! \uADF8\uB7FC \uB0B4\uC77C
+      \uB2E4\uC2DC \uC62C\uD14C\uB2C8 \uAF2D \uB9CC\uB4E4\uC5B4 \uB193\uC73C\uC154\uC57C
+      \uD574\uC694~~~!"
     cg: {fileID: 21300000, guid: 0fde96f39346463438b358d4f4925d64, type: 3}
-  - dialogue: "\uC74C \uBB58 \uB9CC\uB4E4\uAE4C.. \uADF8\uB807\uAD70! \uADF8\uAC78
-      \uB9CC\uB4E4\uBA74 \uB418\uACA0\uC5B4. \uADF8\uB7FC \uC5EC\uD0DC\uAE4C\uC9C0
-      \uC774\uC57C\uAE30\uB294 \uC798 \uB4E4\uC5C8\uACA0\uC9C0? \uC9C0\uAE08 \uB2F9\uC7A5
-      \uC7AC\uB8CC\uB97C \uAD6C\uD574\uC640\uC8FC\uAC8C\uB098!"
+  - log: "\uC800\uC758 \uC774 \uADC0\uC5EC\uC6B4 \uC5BC\uAD74\uC744 \uBD10\uC11C\uB77C\uB3C4!
+      \uADF8\uB7FC \uC548\uB155 !"
+    cg: {fileID: 21300000, guid: 5c7f027706d06a245b4630c73e4a4e51, type: 3}
+  - log: "\uC74C \uBB58 \uB9CC\uB4E4\uAE4C.. \uADF8\uB807\uAD70! \uADF8\uAC78 \uB9CC\uB4E4\uBA74
+      \uB418\uACA0\uC5B4."
     cg: {fileID: 21300000, guid: 2fd6b262b9ede6c428d41f56b3edaaae, type: 3}
+  - log: "\uADF8\uB7FC \uC5EC\uD0DC\uAE4C\uC9C0 \uC774\uC57C\uAE30\uB294 \uC798 \uB4E4\uC5C8\uACA0\uC9C0?
+      \uC9C0\uAE08 \uB2F9\uC7A5 \uC7AC\uB8CC\uB97C \uAD6C\uD574\uC640\uC8FC\uAC8C\uB098!"
+    cg: {fileID: 21300000, guid: cd79b3601ad88064ba6377ead5072e80, type: 3}
 --- !u!1 &560081737
 GameObject:
   m_ObjectHideFlags: 0
@@ -754,7 +762,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1359114131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -980,7 +988,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1850409594
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1022,7 +1030,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 35
+    m_FontSize: 37
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
