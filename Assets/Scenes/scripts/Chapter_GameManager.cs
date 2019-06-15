@@ -99,7 +99,7 @@ public class Chapter_GameManager : MonoBehaviour
             Square[x2, y2] = Instantiate(n[j + 1], new Vector3((1.79f * x2) - 5.122f, (1.79f * y2) - 2.816f, -1), Quaternion.identity);
             Square[x2, y2].tag = "Combine";
             Square[x2, y2].GetComponent<Animator>().SetTrigger("Combine");
-            if (Square[x2, y2].name == n[3].name+"(Clone)")
+            if (Square[x2, y2].name == n[10].name+"(Clone)")
             {
                 stop = true; Success.SetActive(true); return;
             }
