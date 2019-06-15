@@ -64,6 +64,11 @@ public class StoryManager : MonoBehaviour
                     SceneManager.LoadScene("Chapter_2");
                 else if (SceneManager.GetActiveScene().name == "Chapter_2_Ending") // 챕터2 클리어
                     SceneManager.LoadScene("Select_Scene");
+
+                if (SceneManager.GetActiveScene().name == "Chapter_3_Start") // 챕터3 게임시작
+                    SceneManager.LoadScene("Chapter_3");
+                else if (SceneManager.GetActiveScene().name == "Chapter_3_Ending") // 챕터3 클리어
+                    SceneManager.LoadScene("Select_Scene");
             }
         }
     }

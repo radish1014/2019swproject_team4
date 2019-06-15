@@ -878,7 +878,7 @@ GameObject:
   - component: {fileID: 1359114132}
   - component: {fileID: 1359114131}
   m_Layer: 5
-  m_Name: CanvasSprite
+  m_Name: Sprite Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

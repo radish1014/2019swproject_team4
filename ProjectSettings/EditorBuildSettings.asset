@@ -47,4 +47,13 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Chapter_3.unity
+    guid: 0a1140abe4f4ee640a03a0349a3af23d
+  - enabled: 1
+    path: Assets/Scenes/Chapter_3_Start.unity
+    guid: a4dfa4718973cf24cbcf16a3f629cd83
+  - enabled: 1
+    path: Assets/Scenes/Chapter_3_Ending.unity
+    guid: 6d3b1d54e02588e42950ef381184df39
   m_configObjects: {}

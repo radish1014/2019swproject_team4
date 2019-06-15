@@ -37,7 +37,7 @@ public class TouchButton_SelectScene : MonoBehaviour
     public void select_Stage3Button_ChangeScene()
     {
         Debug.Log("select_stage3button");
-        //SceneManager.LoadScene("ModeSelect_Scene");
+        SceneManager.LoadScene("Chapter_3_Start");
         //3스테이지로 이동
     }
     public void select_RefrigertorButton_ChangeScene()
