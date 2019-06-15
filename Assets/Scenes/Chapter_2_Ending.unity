@@ -497,7 +497,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.2, y: -325.4}
+  m_AnchoredPosition: {x: 10, y: -328}
   m_SizeDelta: {x: 988.4, y: 92.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &927803090
@@ -1135,7 +1135,7 @@ MonoBehaviour:
   sprite_standingCG: {fileID: 392880810}
   txt_dialogue: {fileID: 927803090}
   dialogue:
-  - log: "\uB538\uB791-"
+  - log: "[\uB538\uB791-]"
     cg: {fileID: 0}
   - log: "\uC559\uC6A9\uD558\uC170\uC5EC! \uC5B4\uC81C \uC654\uB358 \uD574\uB2EC\uC774\uC5D0\uC694
       \uB9DB \uC88B\uC740 \uC870\uAC1C\uB97C \uAD6C\uD558\uB7EC \uB2E4\uC2DC \uC654\uC5B4\uC694!"
@@ -1146,7 +1146,7 @@ MonoBehaviour:
     cg: {fileID: 21300000, guid: 727f0fa4de805ca41a5d3df384c2a168, type: 3}
   - log: "\uC640\uC559! \uC644\uBCBD\uD574\uC694! \uC798\uBA39\uAC8C\uC2B5\uB2C8\uB2E4~~~..."
     cg: {fileID: 21300000, guid: 0fde96f39346463438b358d4f4925d64, type: 3}
-  - log: "\uB538\uB791-"
+  - log: "[\uB538\uB791-]"
     cg: {fileID: 21300000, guid: 0fde96f39346463438b358d4f4925d64, type: 3}
   - log: "\uC694\uB140\uC11D, \uC5EC\uAE30\uC5D0 \uC788\uC5C8\uAD6C\uB098!"
     cg: {fileID: 0}

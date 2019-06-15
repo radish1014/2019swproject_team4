@@ -377,8 +377,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25, y: -322}
-  m_SizeDelta: {x: 986.5, y: 91.7}
+  m_AnchoredPosition: {x: -475, y: -283}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &292136274
 MonoBehaviour:
@@ -410,8 +410,8 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: New Text
 --- !u!222 &292136275
@@ -844,7 +844,7 @@ MonoBehaviour:
   sprite_standingCG: {fileID: 846440306}
   txt_dialogue: {fileID: 292136274}
   dialogue:
-  - log: "\uB538\uB791-"
+  - log: "[\uB538\uB791-]"
     cg: {fileID: 0}
   - log: "\uC548\uB155\uD558\uC138\uC694. \uC774\uAC70 \uACC4\uC0B0\uD574\uC8FC\uC138\uC694."
     cg: {fileID: 21300000, guid: a02bf83f03a8c6543a471b6e39fdeb39, type: 3}
@@ -855,9 +855,11 @@ MonoBehaviour:
   - log: 
     cg: {fileID: 21300000, guid: 2748f40096dbf8a4d80718a1245f7949, type: 3}
   - log: "\uC5B8\uB73B\uBCF4\uBA74 \uCEE4\uD53C\uCC98\uB7FC \uBCF4\uC774\uC9C0\uB9CC
-      \uC790\uC138\uD788 \uBCF4\uBA74 \uCF54\uCF54\uC544\uD30C\uC6B0\uB354\uAC00 \uC62C\uB824\uC838\uC788\uB294
-      \uD2F0\uB77C\uBBF8\uC218\uB77C\uB124.\n\uC774\uAC70\uB77C\uBA74 \uD68C\uC0AC\uC5D0\uC11C
-      \uB9D8 \uB193\uACE0 \uBA39\uC744 \uC218 \uC788\uC744\uAC78\uC138."
+      \uC790\uC138\uD788 \uBCF4\uBA74\n\uCF54\uCF54\uC544\uD30C\uC6B0\uB354\uAC00
+      \uC62C\uB824\uC838\uC788\uB294 \uD2F0\uB77C\uBBF8\uC218\uB77C\uB124."
+    cg: {fileID: 21300000, guid: 2748f40096dbf8a4d80718a1245f7949, type: 3}
+  - log: "\uC774\uAC70\uB77C\uBA74 \uD68C\uC0AC\uC5D0\uC11C \uB9D8 \uB193\uACE0 \uBA39\uC744
+      \uC218 \uC788\uC744\uAC78\uC138."
     cg: {fileID: 21300000, guid: 2748f40096dbf8a4d80718a1245f7949, type: 3}
   - log: "!! \uAC10\uC0AC\uD569\uB2C8\uB2E4!"
     cg: {fileID: 21300000, guid: 48aa4f3ce7fa5944b9923f7434b07b84, type: 3}
