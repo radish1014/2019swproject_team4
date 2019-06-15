@@ -8,7 +8,7 @@ public class TouchButton_mainScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        Screen.SetResolution(1024, 768, true);
     }
 
     // Update is called once per frame
