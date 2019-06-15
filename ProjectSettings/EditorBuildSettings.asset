@@ -27,15 +27,24 @@ EditorBuildSettings:
     path: Assets/Scenes/Refrigerator_Scene.unity
     guid: 4b52e3f7033d22d49822a7dd7797ff32
   - enabled: 1
+    path: Assets/Scenes/Chapter_1_Start.unity
+    guid: 25d59c01c6b4a414ca1bb7dd3850b004
+  - enabled: 1
+    path: Assets/Scenes/Chapter_1.unity
+    guid: 25d6e4e3441ce5c48ad923c521dad179
+  - enabled: 1
+    path: Assets/Scenes/Chapter_1_Ending.unity
+    guid: 3e0e37c0592c3d7428cc741530632dc1
+  - enabled: 1
     path: Assets/Scenes/Chapter_2_Start.unity
     guid: c51d59223a7c90d46ab1201fb874d2cb
   - enabled: 1
-    path: Assets/Scenes/Chapter_2_Ending.unity
-    guid: aac1a0969e8a455418573a34168caa9c
-  - enabled: 1
     path: Assets/Scenes/Chapter_2.unity
     guid: 67b6b3305921a0f40b148772050674d6
+  - enabled: 1
+    path: Assets/Scenes/Chapter_2_Ending.unity
+    guid: aac1a0969e8a455418573a34168caa9c
   - enabled: 0
-    path: Assets/Scenes/Stage1_GameScene.unity
-    guid: 37e142c4de02caa4982b14f74229a965
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

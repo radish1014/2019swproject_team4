@@ -496,8 +496,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.1, y: -272.9}
-  m_SizeDelta: {x: 966.8, y: 180.3}
+  m_AnchoredPosition: {x: -1.2, y: -325.4}
+  m_SizeDelta: {x: 988.4, y: 92.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &927803090
 MonoBehaviour:
@@ -632,8 +632,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1548845891}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: -274, z: -45.16763}
-  m_LocalScale: {x: 1.002611, y: 1.002611, z: 1.002611}
+  m_LocalPosition: {x: 0, y: -324, z: -45.16763}
+  m_LocalScale: {x: 1.0373892, y: 1.002611, z: 1.002611}
   m_Children: []
   m_Father: {fileID: 466165473}
   m_RootOrder: 1
@@ -675,7 +675,7 @@ SpriteRenderer:
   m_SortingLayerID: 323052549
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: d4759435ab7696f478a1ebcd0199fd9f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c6cea8206c7a1d447817b3efe5cd1225, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -930,30 +930,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b40941f44f0092445a9f924f47ef93ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite_StandingCG: {fileID: 392880810}
-  sprite_DialogueBox: {fileID: 1548845893}
-  txt_Dialogue: {fileID: 927803090}
+  sprite_textBox: {fileID: 1548845893}
+  sprite_standingCG: {fileID: 392880810}
+  txt_dialogue: {fileID: 927803090}
   dialogue:
-  - dialogue: "\uC559\uC6A9\uD558\uC170\uC5EC! \uC5B4\uC81C \uC654\uB358 \uD574\uB2EC\uC774\uC5D0\uC694
+  - log: "\uB538\uB791-"
+    cg: {fileID: 0}
+  - log: "\uC559\uC6A9\uD558\uC170\uC5EC! \uC5B4\uC81C \uC654\uB358 \uD574\uB2EC\uC774\uC5D0\uC694
       \uB9DB \uC88B\uC740 \uC870\uAC1C\uB97C \uAD6C\uD558\uB7EC \uB2E4\uC2DC \uC654\uC5B4\uC694!"
     cg: {fileID: 21300000, guid: 5c7f027706d06a245b4630c73e4a4e51, type: 3}
-  - dialogue: "\uC88B\uC740 \uC544\uCE68\uC774\uB124! \uB9C8\uCE68 \uD55C\uAE40 \uC2DD\uD600
+  - log: "\uC88B\uC740 \uC544\uCE68\uC774\uB124! \uB9C8\uCE68 \uD55C\uAE40 \uC2DD\uD600
       \uB9DB\uC788\uAC8C \uD574\uB454 \uCC38\uC774\uC57C. \uC790, \uC870\uAC1C \uBAA8\uC591\uC744
       \uB2EE\uC740 \uB9C8\uB4E4\uB80C\uC774\uB77C\uB124!"
     cg: {fileID: 21300000, guid: 727f0fa4de805ca41a5d3df384c2a168, type: 3}
-  - dialogue: "\uC640\uC559! \uC644\uBCBD\uD574\uC694! \uC798\uBA39\uAC8C\uC2B5\uB2C8\uB2E4~~~..."
+  - log: "\uC640\uC559! \uC644\uBCBD\uD574\uC694! \uC798\uBA39\uAC8C\uC2B5\uB2C8\uB2E4~~~..."
     cg: {fileID: 21300000, guid: 0fde96f39346463438b358d4f4925d64, type: 3}
-  - dialogue: "\uB538\uB791-"
+  - log: "\uB538\uB791-"
+    cg: {fileID: 21300000, guid: 0fde96f39346463438b358d4f4925d64, type: 3}
+  - log: "\uC694\uB140\uC11D, \uC5EC\uAE30\uC5D0 \uC788\uC5C8\uAD6C\uB098!"
     cg: {fileID: 0}
-  - dialogue: "\uC694\uB140\uC11D, \uC5EC\uAE30\uC5D0 \uC788\uC5C8\uAD6C\uB098! \uC2E4\uB840\uD588\uC2B5\uB2C8\uB2E4.
-      \uC606\uB3D9\uB124 \uB3D9\uBB3C\uC6D0\uC5D0\uC11C \uD574\uB2EC \uD55C\uB9C8\uB9AC\uAC00
-      \uD0C8\uCD9C\uD588\uB294\uB370 \uC5B4\uB5BB\uAC8C \uC5EC\uAE30\uAE4C\uC9C0 \uC654\uB294\uC9C0.."
+  - log: "\uC2E4\uB840\uD588\uC2B5\uB2C8\uB2E4. \uC606\uB3D9\uB124 \uB3D9\uBB3C\uC6D0\uC5D0\uC11C
+      \uD574\uB2EC \uD55C\uB9C8\uB9AC\uAC00 \uD0C8\uCD9C\uD588\uB294\uB370 \uC5B4\uB5BB\uAC8C
+      \uC5EC\uAE30\uAE4C\uC9C0 \uC654\uB294\uC9C0.."
     cg: {fileID: 0}
-  - dialogue: "\uC774\uB140\uC11D! \uC5BC\uB9C8\uB098 \uAC71\uC815\uD588\uB294 \uC904
-      \uC54C\uC544? \uC5EC\uD0DC \uC798 \uB180\uC558\uC744\uD14C\uB2C8 \uC774\uC81C
-      \uBE68\uB9AC \uB3D9\uBB3C\uC6D0\uC73C\uB85C \uB3CC\uC544\uAC00\uC790."
+  - log: "\uC774\uB140\uC11D! \uC5BC\uB9C8\uB098 \uAC71\uC815\uD588\uB294 \uC904 \uC54C\uC544?
+      \uC5EC\uD0DC \uC798 \uB180\uC558\uC744\uD14C\uB2C8 \uC774\uC81C \uBE68\uB9AC
+      \uB3D9\uBB3C\uC6D0\uC73C\uB85C \uB3CC\uC544\uAC00\uC790."
     cg: {fileID: 21300000, guid: 70d8409937c395742900944823a3d58c, type: 3}
-  - dialogue: "\uC544\uC800\uC528~~ \uACE0\uB9C8\uC6CC\uC694! \uC774 \uB9C8\uB4E4\uB80C\uC774\uB780
+  - log: "\uC544\uC800\uC528~~ \uACE0\uB9C8\uC6CC\uC694! \uC774 \uB9C8\uB4E4\uB80C\uC774\uB780
       \uBE75 \uC815\uB9D0 \uB9DB\uC788\uC5C8\uC5B4\uC694! \uADF8\uB7FC \uC548\uB155~~!"
     cg: {fileID: 21300000, guid: ca79c644dcb54d748a7e5b24dca56410, type: 3}
 --- !u!1 &1989129512
