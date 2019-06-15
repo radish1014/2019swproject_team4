@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
     public GameObject Quit;
     public Text Score, BestScore, Plus;
 
+    public AudioClip CombineSound;
+    public AudioSource Keyboard;
+
 
     int x, y,i,j,k,l,score;
     GameObject[,] Square = new GameObject[4, 4];
@@ -22,6 +25,7 @@ public class GameManager : MonoBehaviour
         Spawn();
         Spawn();
         BestScore.text = PlayerPrefs.GetInt("BestScore").ToString();
+        Keyboard = transform.GetComponent<AudioSource>();
     }
 
     
@@ -127,6 +131,7 @@ public class GameManager : MonoBehaviour
             Square[x2, y2].tag = "Combine";
             Square[x2, y2].GetComponent<Animator>().SetTrigger("Combine");
             score += (int)Mathf.Pow(2, j + 2);
+            Keyboard.PlayOneShot(CombineSound);
 
         }
 

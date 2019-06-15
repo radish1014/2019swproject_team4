@@ -11,6 +11,8 @@ public class Chapter_GameManager : MonoBehaviour
     public GameObject Quit;
     public GameObject Success;
 
+    public AudioClip CombineSound;
+    public AudioSource Keyboard;
 
 
     int x, y, i, j, k, l;
@@ -19,10 +21,11 @@ public class Chapter_GameManager : MonoBehaviour
 
     bool wait, move, stop=false;
 
-    void Start(){
+    void Start()
+    {
         Spawn();
         Spawn();
-       
+        Keyboard = transform.GetComponent<AudioSource>();
     }
     void Update()
     {
@@ -99,6 +102,7 @@ public class Chapter_GameManager : MonoBehaviour
             Square[x2, y2] = Instantiate(n[j + 1], new Vector3((1.79f * x2) - 5.122f, (1.79f * y2) - 2.816f, -1), Quaternion.identity);
             Square[x2, y2].tag = "Combine";
             Square[x2, y2].GetComponent<Animator>().SetTrigger("Combine");
+            Keyboard.PlayOneShot(CombineSound);
             if (Square[x2, y2].name == n[10].name+"(Clone)")
             {
                 stop = true; Success.SetActive(true); return;
