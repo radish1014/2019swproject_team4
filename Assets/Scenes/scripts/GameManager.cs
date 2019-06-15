@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-
     public GameObject[] n;
     public GameObject Quit;
     public Text Score, BestScore, Plus;
@@ -35,7 +34,6 @@ public class GameManager : MonoBehaviour
         {
             //Debug.Log("keydown- left");
             for (y = 0; y <= 3; y++) for (x = 3; x >= 1; x--) for (i = 0; i <= x - 1; i++) MoveorCombine(i + 1, y, i, y);
-
         }
 
         else if (Input.GetKeyDown(KeyCode.RightArrow) == true)
