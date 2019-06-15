@@ -1160,7 +1160,7 @@ MonoBehaviour:
     cg: {fileID: 21300000, guid: 70d8409937c395742900944823a3d58c, type: 3}
   - log: "\uC544\uC800\uC528~~ \uACE0\uB9C8\uC6CC\uC694! \uC774 \uB9C8\uB4E4\uB80C\uC774\uB780
       \uBE75 \uC815\uB9D0 \uB9DB\uC788\uC5C8\uC5B4\uC694! \uADF8\uB7FC \uC548\uB155~~!"
-    cg: {fileID: 21300000, guid: ca79c644dcb54d748a7e5b24dca56410, type: 3}
+    cg: {fileID: 21300000, guid: a69ce306e587dfd498335eecb4760913, type: 3}
 --- !u!1 &1989129512
 GameObject:
   m_ObjectHideFlags: 0
