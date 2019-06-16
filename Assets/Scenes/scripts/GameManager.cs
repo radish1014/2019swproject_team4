@@ -77,47 +77,32 @@ public class GameManager : MonoBehaviour
                 score = 0;
             }
             
-            for (x = 0; x <= 3; x++)
-            {
+            for (x = 0; x <= 3; x++){
                 for (y = 0; y <= 3; y++)
-                {     
-                    //타일 꽉차면 k 0됨
+                {      
                     if (Square[x, y] == null) { k++; continue; }
                     if (Square[x, y].tag == "Combine") Square[x, y].tag = "Untagged";
                 }
-            }
-            
+            }    
             if (k == 0){
-                    
                     for (y = 0; y <= 3; y++) for (x = 0; x <= 2; x++) if (Square[x, y].name == Square[x + 1, y].name) l++;
                     for (x = 0; x <= 3; x++) for (y = 0; y <= 2; y++) if (Square[x, y].name == Square[x, y + 1].name) l++;
-                    {
-                        
+                    { 
                         stop = true; Quit.SetActive(true); return;
                     }
                 }
-            
         }
-
-            
-        }
-
-
-    
-
-
+    }
     //이동 혹 결합하는 함수
     //x1,y1 = 이동전 좌표, x2, y2 = 이동 후 좌표
     void MoveorCombine(int x1, int y1, int x2, int y2) {
         //이동될좌표 빔 && 이동전좌표에 존재 == 이동함
-        if (Square[x2, y2] == null && Square[x1, y1] != null) {
-
+        if (Square[x2, y2] == null && Square[x1, y1] != null){
             move = true;
-            Square[x1, y1].GetComponent<Moving>().Move(x2,y2,false);
+            Square[x1, y1].GetComponent<Moving>().Move(x2, y2, false);
             Square[x2, y2] = Square[x1, y1];
             Square[x1, y1] = null;
         }
-
         //둘다 같은 수일때 결합
         if (Square[x1, y1] != null && Square[x2, y2] != null && Square[x1, y1].name == Square[x2, y2].name && Square[x1, y1].tag != "Combine" && Square[x2, y2].tag != "Combine") {
             move = true;
@@ -132,14 +117,9 @@ public class GameManager : MonoBehaviour
             Square[x2, y2].GetComponent<Animator>().SetTrigger("Combine");
             score += (int)Mathf.Pow(2, j + 2);
             Keyboard.PlayOneShot(CombineSound);
-
         }
-
     }
-
-
-    void Spawn()
-    {
+    void Spawn() {
         while (true) {
             x = Random.Range(0, 4);
             y = Random.Range(0, 4);
@@ -148,11 +128,13 @@ public class GameManager : MonoBehaviour
         Square[x, y] = Instantiate(Random.Range(0, 8) > 0 ? n[0] : n[1], new Vector3((1.79f * x) - 5.122f, (1.79f * y) - 2.816f, -1), Quaternion.identity);
         Square[x, y].GetComponent<Animator>().SetTrigger("Spawn_new");
     }
-
-
     //재시작
     public void Restart() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void back() {
+        SceneManager.LoadScene("ModeSelect_Scene");
     }
 }
 

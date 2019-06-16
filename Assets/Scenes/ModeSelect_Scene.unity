@@ -390,7 +390,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1522294450}
-        m_MethodName: modeselect_BackButton_ChangeScene
+        m_MethodName: gomain_ChangeScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -664,7 +664,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1522294450}
-        m_MethodName: modeselect_StoryButton_ChangeScene
+        m_MethodName: goselect_ChangeScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -938,7 +938,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1522294450}
-        m_MethodName: modeselect_ScoreButton_ChangeScene
+        m_MethodName: goscoremode_ChangeScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -970,7 +970,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 47204b9c5f3752a46939569d2f1735a6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ff25fd257b343ff47a3cff3f20a501de, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1241,7 +1241,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1522294448}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d55d62ac7ce8f248ac547b95250b7db, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b03588aca6448f44b858562b50bd4e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1620300197

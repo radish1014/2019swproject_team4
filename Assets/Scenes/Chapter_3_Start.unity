@@ -363,7 +363,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1599930517}
-        m_MethodName: Chapter_2_BackButton_ChangeScene
+        m_MethodName: goselect_ChangeScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -956,7 +956,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1599930516}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f70f00e50cdcff4e9bb210e51453087, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b03588aca6448f44b858562b50bd4e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1599930518
