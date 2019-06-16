@@ -51,3 +51,6 @@ TagManager:
   - name: UI
     uniqueID: 323052549
     locked: 0
+  - name: quit&success
+    uniqueID: 4137165803
+    locked: 0
