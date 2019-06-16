@@ -5,28 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class TouchButton : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void gomain_ChangeScene()
     {
         SceneManager.LoadScene("main");
         //메인화면으로이동
     }
-    public void gosetting_ChangeScene() {
-        SceneManager.LoadScene("Setting_Scene");
-        //셋팅화면으로 이동
-    }
-
     public void gomodeselect_ChangeScene()
     {
         SceneManager.LoadScene("ModeSelect_Scene");
@@ -60,6 +43,5 @@ public class TouchButton : MonoBehaviour
         Application.Quit();
         //게임종료
     }
-    
 
 }

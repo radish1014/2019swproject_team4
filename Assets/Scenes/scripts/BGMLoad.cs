@@ -5,25 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class BGMLoad : MonoBehaviour
 {
-    public AudioClip BGM;
-    AudioSource audio;
-
+    private static BGMLoad instance;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        audio = GetComponent<AudioSource>();
-        DontDestroyOnLoad(gameObject);
+        if (instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else {
+            instance = this;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        
+    }
+    void Update() {
+        
+        
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (!audio.isPlaying)
-        {
-            audio.clip = BGM;
-            audio.Play();
-        }
-    
-    }
 }
