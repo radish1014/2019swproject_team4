@@ -205,7 +205,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1034270171}
-        m_MethodName: main_SettingButton_ChangeScene
+        m_MethodName: gosetting_ChangeScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -618,7 +618,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1034270169}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ce52cfaba1bc5249b8d19da829a56e7, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b03588aca6448f44b858562b50bd4e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1345215428
@@ -706,7 +706,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1034270171}
-        m_MethodName: main_StartButton_ChangeScene
+        m_MethodName: gomodeselect_ChangeScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1186,7 +1186,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1034270171}
-        m_MethodName: 
+        m_MethodName: goend
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
